@@ -10,7 +10,7 @@ import React from 'react'
 // to generate static pages 
 export async function generateStaticParams() { 
   const posts = await getPosts()
-  const slugs = posts.map(post => ({ slug: post.slug }))
+  const slugs = posts.map(post => ({ slug: post.slug })) // slug beacause slug is inside []
 
   return slugs
 }
